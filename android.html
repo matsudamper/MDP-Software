@@ -35,20 +35,42 @@
             <font size="6" face="fantasy">Android</font>
         </div>
 
-        <a href="https://play.google.com/store/apps/details?id=com.matsudamper.TweetBookmark" class="application-item" title="Tweet Bookark">
-            <img src="img/android/TweetBookark/icon.png">
-            <h2>Tweet Bookark</h2>
-        </a>
+        <div id="container-products" class="container-products"/>
 
-        <a href="https://play.google.com/store/apps/details?id=com.matsudamper.onemio" class="application-item" title="OneMio">
-            <img src="img/android/OneMio/icon.png">
-            <h2>OneMio</h2>
-        </a>
-
-        <a href="https://play.google.com/store/apps/details?id=com.matsudamper.smallmemopad" class="application-item" title="smallmemo">
-            <img src="img/android/smallmemo/icon.png">
-            <h2>smallmemo</h2>
-        </a>
+        <script>
+            var array = [//Name,ImageFilename,link
+            ['SmallMemo', 'smallmemo', 'https://play.google.com/store/apps/details?id=com.matsudamper.smallmemopad'],
+            ['SmallTweet', 'SmallTweet', 'https://play.google.com/store/apps/details?id=net.matsudamper.smalltweet'],
+            ['One Mio', 'OneMio', 'https://play.google.com/store/apps/details?id=com.matsudamper.onemio'],
+            ['Tweet Bookark', 'TweetBookark', 'https://play.google.com/store/apps/details?id=com.matsudamper.TweetBookmark']
+            ];
+                
+            for(var i = 0; i < array.length; i++){
+                
+                var item = array[i];
+                    
+                var title = item[0];
+                var imgurl = "img/android/" + item[1] + "/icon.png";
+                var url = item[2];
+                
+                var div = document.createElement("a");
+                div.setAttribute("href",url);
+                div.setAttribute("class","application-item");
+                div.setAttribute("title",title);
+                
+                var img = document.createElement("img");
+                img.setAttribute("src",imgurl);
+                
+                var h2 = document.createElement("h2");
+                h2.innerText = title;
+                
+                div.appendChild(img);
+                div.appendChild(h2);
+                
+                var parent_object = document.getElementById("container-products");
+                parent_object.appendChild(div);
+            }
+        </script>
 
         <!-- フッター -->
         <div id="footer-space" />
