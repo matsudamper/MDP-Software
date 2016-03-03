@@ -23,6 +23,11 @@ a.header {
     background-color: #536dfe;
 }
 
+/* タイトル */
+.title {
+    padding:20px 0 5px;
+}
+
 /* プロダクト */
 .container-products {
     padding:20px 0 0;
