@@ -25,12 +25,10 @@ a.header {
 
 /* プロダクト */
 .container-products {
-    background-color: #536dfe;
     padding:20px 0 0;
 }
 
 .product-box{
-    background-color: #536dfe;
     text-align:center;
     padding:20px 0;
 }
