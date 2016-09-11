@@ -68,11 +68,9 @@
 </div>
 
 <div id="main-container">
-    <div class="container">
-        <div id="container-products" class="row">
-            <h2 class="text-center sub-title">Android</h2>
+    <h2 class="text-center sub-title">Android</h2>
 
-        </div>
+    <div id="container-products" align="center">
     </div>
 </div>
 
@@ -97,13 +95,11 @@
         var imgurl = item[1] + "/icon.png";
         var url = item[2];
 
-        var col = document.createElement("div");
-        col.setAttribute("class", "col-xs-12 col-sm-6 col-md-4 col-lg-3");
-
         var div = document.createElement("a");
         div.setAttribute("href",url);
         div.setAttribute("target","_blank");
         div.setAttribute("class","application-item");
+        div.setAttribute("align","left");
         div.setAttribute("title",title);
 
         var img = document.createElement("img");
@@ -116,19 +112,17 @@
         div.appendChild(img);
         div.appendChild(h2);
 
-        col.appendChild(div)
-
         var parent_object = document.getElementById("container-products");
-        parent_object.appendChild(col);
+        parent_object.appendChild(div);
     }
 </script>
 <!--
-<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-    <a class="application-item" href="https://play.google.com/store/apps/details?id=com.matsudamper.smallmemopad">
-        <img width="100" src="smallmemo/icon.png">
-        <h3>smallmemo</h3>
-    </a>
-</div>
+        <a class="application-item"
+           align="left"
+           href="https://play.google.com/store/apps/details?id=com.matsudamper.smallmemopad">
+            <img width="100" src="smallmemo/icon.png">
+            <h3>smallmemo</h3>
+        </a>
 -->
 </body>
 </html>

@@ -13,6 +13,11 @@ body {
     display: none;
 }
 
+.text{
+    color: #000000;
+}
+
+/* タイトル */
 #title{
     color: #000000;
     font-family: fantasy;
@@ -31,21 +36,22 @@ body {
     margin-bottom: 10px;
 }
 
-.text{
-    color: #000000;
+/* Home */
+.platform-container{
+    float: left;
+    width: 100%;
 }
 
-/* 商品アイテムを乗せるコンテナ */
-#container-products{
-    padding: 10px;
-    margin-bottom: 10px;
+.platform-box{
+    float: left;
 }
+
 /* 商品アイテム */
 .application-item{
     display:inline-block;
     background: #3f51b5;
-    margin-top: 20px;
-    width: 100%;
+    margin: 20px;
+    width: 250px;
 }
 a.application-item {
     color: #000000;
@@ -62,7 +68,7 @@ a:hover.application-item {
 .product-item {
     color: #000000;
     display:inline-block;
-    width: 100%;
+    margin: 20px;
 }
 a.product-item {
     color: #000000;
