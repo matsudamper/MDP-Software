@@ -1,0 +1,87 @@
+body {
+    background-color: #536dfe;
+}
+
+#header{
+    padding:20px;
+
+    color: #000000;
+    background-color: #5c6bc0;
+}
+
+#main-container{
+    display: none;
+}
+
+#title{
+    color: #000000;
+    font-family: fantasy;
+    font-size: 50px;
+}
+
+.main-title{
+    color: #000000;
+    font-family: fantasy;
+    margin-bottom: 50px;
+}
+
+.sub-title{
+    color: #000000;
+    font-family: fantasy;
+    margin-bottom: 10px;
+}
+
+.text{
+    color: #000000;
+}
+
+/* 商品アイテムを乗せるコンテナ */
+#container-products{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+/* 商品アイテム */
+.application-item{
+    display:inline-block;
+    background: #3f51b5;
+    margin-top: 20px;
+    width: 100%;
+}
+a.application-item {
+    color: #000000;
+    font-style:normal;
+    text-decoration: none;
+}
+a:hover.application-item {
+    color: #000000;
+    font-style:normal;
+    text-decoration: none;
+}
+
+/* プロダクト */
+.product-item {
+    color: #000000;
+    display:inline-block;
+    width: 100%;
+}
+a.product-item {
+    color: #000000;
+    text-decoration: none;
+}
+a:hover.product-item {
+    color: #000000;
+    text-decoration: underline;
+}
+
+/* コンタクト(フッター) */
+.contact-item {
+    color: #000000;
+}
+a.contact-item {
+    color: #000000;
+    text-decoration: none;
+}
+a:hover.contact-item {
+    color: #000000;
+    text-decoration: underline;
+}

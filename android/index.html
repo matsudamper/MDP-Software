@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+
+    <title>MDP Software</title>
+    <meta name="description" itemprop="description" content="PSVita,Android,UWPアプリ開発" />
+    <meta name="keywords" content="MDP Software,matsudamper,Android,UWP,Windows,Vita,PS">
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/sticky-footer.css">
+    <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/css/my.css">
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+    <!-- IEでの互換表示無し -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- レスポンシブルデザイン用 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ヘッダー -->
+    <script type="text/javascript">
+        $.when(
+                $.ajax({
+                    type: "GET",
+                    url: "/header.html",
+                    dataType: "html",
+                    success: function(data) {
+
+                        var header_data = data.split("</head>")[1];
+                        $("#header").append($(header_data));
+                    }
+                }),
+
+                $.ajax({
+                    type: "GET",
+                    url: "/footer.html",
+                    dataType: "html",
+                    success: function(data) {
+
+                        var footer_data = data.split("</head>")[1];
+                        $("body").append($(footer_data));
+                    }
+                })
+        ).done(function () {
+
+            $('#main-container').css('display', 'block');
+        });
+    </script>
+    
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-54718130-4', 'auto');
+  ga('send', 'pageview');
+    </script>
+</head>
+
+<body>
+<div id="header"></div>
+
+<div align="center">
+    <noscript>
+        このWebサイトの全ての機能を利用するためにはJavaScriptを有効にする必要があります。
+        <br>
+        <a href="http://www.enable-javascript.com/ja/" target="_blank">
+            あなたのWebブラウザーでJavaScriptを有効にする方法</a> を参照してください。
+    </noscript>
+</div>
+
+<div id="main-container">
+    <div class="container">
+        <div id="container-products" class="row">
+            <h2 class="text-center sub-title">Android</h2>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    var array = [//Name,ImageFilename,link
+        ['SmallMemo', 'smallmemo', 'https://play.google.com/store/apps/details?id=com.matsudamper.smallmemopad'],
+        ['SmallTweet', 'SmallTweet', 'https://play.google.com/store/apps/details?id=net.matsudamper.smalltweet'],
+        ['One Mio', 'OneMio', 'https://play.google.com/store/apps/details?id=com.matsudamper.onemio'],
+        ['Tweet Bookark', 'TweetBookark', 'https://play.google.com/store/apps/details?id=com.matsudamper.TweetBookmark'],
+        ['Rotate Screenshot', 'RotateScreenshot', 'https://play.google.com/store/apps/details?id=net.matsudamper.rotatescreenshot'],
+        ['PhotoEditRotate', 'PhotoEditRotate', 'https://play.google.com/store/apps/details?id=net.matsudamper.photorotate'],
+        ['SmallTimer', 'SmallTimer', 'https://play.google.com/store/apps/details?id=net.matsudamper.smalltimer'],
+        ['ふりったー', 'Flitter', 'https://play.google.com/store/apps/details?id=net.matsudamper.kanon']
+    ];
+
+    for(var i = 0; i < array.length; i++){
+
+        var item = array[i];
+
+        var title = item[0];
+        var imgurl = item[1] + "/icon.png";
+        var url = item[2];
+
+        var col = document.createElement("div");
+        col.setAttribute("class", "col-xs-12 col-sm-6 col-md-4 col-lg-3");
+
+        var div = document.createElement("a");
+        div.setAttribute("href",url);
+        div.setAttribute("target","_blank");
+        div.setAttribute("class","application-item");
+        div.setAttribute("title",title);
+
+        var img = document.createElement("img");
+        img.setAttribute("src",imgurl);
+        img.setAttribute("width", "100");
+
+        var h2 = document.createElement("h3");
+        h2.innerText = title;
+
+        div.appendChild(img);
+        div.appendChild(h2);
+
+        col.appendChild(div)
+
+        var parent_object = document.getElementById("container-products");
+        parent_object.appendChild(col);
+    }
+</script>
+<!--
+<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+    <a class="application-item" href="https://play.google.com/store/apps/details?id=com.matsudamper.smallmemopad">
+        <img width="100" src="smallmemo/icon.png">
+        <h3>smallmemo</h3>
+    </a>
+</div>
+-->
+</body>
+</html>

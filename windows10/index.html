@@ -29,8 +29,8 @@
                     dataType: "html",
                     success: function(data) {
 
-                        var split_data = data.split("</head>")[1];
-                        $("#header").append($(split_data));
+                        var header_data = data.split("</head>")[1];
+                        $("#header").append($(header_data));
                     }
                 }),
 
@@ -40,8 +40,8 @@
                     dataType: "html",
                     success: function(data) {
 
-                        var split_data = data.split("</head>")[1];
-                        $("body").append($(split_data));
+                        var footer_data = data.split("</head>")[1];
+                        $("body").append($(footer_data));
                     }
                 })
         ).done(function () {
@@ -49,14 +49,14 @@
             $('#main-container').css('display', 'block');
         });
     </script>
-    
+
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-54718130-4', 'auto');
-  ga('send', 'pageview');
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-54718130-4', 'auto');
+        ga('send', 'pageview');
     </script>
 </head>
 
@@ -73,32 +73,59 @@
 </div>
 
 <div id="main-container">
-    <h1 class="text-center main-title">products</h1>
-
     <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-sm-4">
-                <a class="product-item" href="/vita" title="PlayStation Vita">
-                    <img class="center-block" src="vita.png">
-                    <h2 class="text-center">PlayStation Vita</h2>
-                </a>
-            </div>
+        <div id="container-products" class="row">
+            <h2 class="text-center sub-title">Windows10</h2>
 
-            <div class="col-xs-12 col-sm-4">
-                <a class="product-item" href="/android" title="Android">
-                    <img class="center-block" src="android.png">
-                    <h2 class="text-center">Android</h2>
-                </a>
-            </div>
-
-            <div class="col-xs-12 col-sm-4">
-                <a class="product-item" href="/windows10" title="Windows10">
-                    <img class="center-block" src="windows.png">
-                    <h2 class="text-center">Windows10</h2>
-                </a>
-            </div>
         </div>
     </div>
 </div>
+
+<script>
+    var array = [//Name,ImageFilename,link
+        ['HORIKAESHI', 'HORIKAESHI', 'https://www.microsoft.com/ja-jp/store/p/horikaeshi/9nblggh528nh']
+    ];
+
+    for(var i = 0; i < array.length; i++){
+
+        var item = array[i];
+
+        var title = item[0];
+        var imgurl = item[1] + "/icon.png";
+        var url = item[2];
+
+        var col = document.createElement("div");
+        col.setAttribute("class", "col-xs-12 col-sm-6 col-md-4 col-lg-3");
+
+        var div = document.createElement("a");
+        div.setAttribute("href",url);
+        div.setAttribute("target","_blank");
+        div.setAttribute("class","application-item");
+        div.setAttribute("title",title);
+
+        var img = document.createElement("img");
+        img.setAttribute("src",imgurl);
+        img.setAttribute("width", "100");
+
+        var h2 = document.createElement("h3");
+        h2.innerText = title;
+
+        div.appendChild(img);
+        div.appendChild(h2);
+
+        col.appendChild(div)
+
+        var parent_object = document.getElementById("container-products");
+        parent_object.appendChild(col);
+    }
+</script>
+<!--
+<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+    <a class="application-item" href="https://play.google.com/store/apps/details?id=com.matsudamper.smallmemopad">
+        <img width="100" src="smallmemo/icon.png">
+        <h3>smallmemo</h3>
+    </a>
+</div>
+-->
 </body>
 </html>
