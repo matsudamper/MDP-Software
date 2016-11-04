@@ -10,34 +10,9 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/sticky-footer.css">
     <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="../css/my.css">
+    <link rel="stylesheet" href="../css/style.css">
     <script type="text/javascript" src="../js/jquery.min.js"></script>
     <script type="text/javascript" src="../js/bootstrap.min.js"></script>
-
-    <!-- ヘッダー -->
-    <script type="text/javascript">
-        $.when(
-                $.ajax({
-                    type: "GET",
-                    url: "../header.html",
-                    dataType: "html"
-                }),
-                $.ajax({
-                    type: "GET",
-                    url: "../footer.html",
-                    dataType: "html"
-                })
-        ).done(function (data_head,data_foot) {
-
-            var head = data_head[0].split("</head>")[1];
-            $("#header").append($(head));
-
-            var foot = data_foot[0].split("</head>")[1];
-            $("body").append($(foot));
-
-            $('#main-container').css('display', 'block');
-        });
-    </script>
 
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -50,7 +25,11 @@
 </head>
 
 <body>
-<div id="header"></div>
+<div id="header">
+    <a href="/MDP-Software">
+        <h1 id="title" class="text-center">M.D.P. Software</h1>
+    </a>
+</div>
 
 <div id="main-container">
     <h2 class="text-center sub-title">Windows10</h2>
@@ -58,6 +37,18 @@
     <div id="container-products" align="center">
     </div>
 </div>
+
+<footer id="footer" class="footer">
+    <div class="container">
+        <h2 class="contact-item text-center">contacts</h2>
+
+        <a class="contact-item text-center" href="https://twitter.com/MDP_Software" target="_blank">
+            <h3>Twitter : @MDP_Software</h3>
+        </a>
+
+        <h3 class="contact-item text-center">Gmail : mdp.mobilesoftware</h3>
+    </div>
+</footer>
 
 <script>
     var array = [//Name,ImageFilename,link
