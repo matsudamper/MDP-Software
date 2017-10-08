@@ -1,0 +1,27 @@
+.title {
+  display: block;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold; }
+
+#products .product {
+  width: 20em;
+  height: 10em;
+  margin: 1em;
+  background-color: #3f51b5; }
+  #products .product img {
+    float: left;
+    width: 125px;
+    height: 125px; }
+  #products .product .name {
+    height: 125px;
+    line-height: 125px;
+    font-size: 1.5em;
+    text-align: center; }
+  #products .product a {
+    color: #000000; }
+    #products .product a:hover {
+      color: #1d1e1f;
+      text-decoration: none; }
+
+/*# sourceMappingURL=style.css.map */

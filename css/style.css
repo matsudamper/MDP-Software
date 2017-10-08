@@ -1,93 +1,41 @@
+html {
+  height: 100%; }
+
 body {
-    background-color: #536dfe;
-}
+  margin: 0;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column; }
 
-#header{
-    padding:20px;
+header {
+  background-color: #4753a2;
+  padding-top: 1em;
+  padding-bottom: 1em; }
+  header h1 {
+    text-align: center;
+    margin: 0; }
+    header h1 a {
+      color: #000000; }
+      header h1 a:hover {
+        color: #000000;
+        text-decoration: none; }
+      header h1 a:active {
+        color: #000000; }
 
-    color: #000000;
-    background-color: #5c6bc0;
-}
+main {
+  flex: 1;
+  background-color: #536dff; }
 
-#main-container{
+footer {
+  background-color: #4753a2;
+  text-align: center;
+  color: #000000; }
+  footer a {
+    color: #000000; }
+    footer a:hover {
+      color: #000000;
+      text-decoration: none; }
+    footer a:active {
+      color: #000000; }
 
-}
-
-.text{
-    color: #000000;
-}
-
-/* タイトル */
-#title{
-    color: #000000;
-    font-family: fantasy;
-    font-size: 50px;
-}
-
-.main-title{
-    color: #000000;
-    font-family: fantasy;
-    margin-bottom: 50px;
-}
-
-.sub-title{
-    color: #000000;
-    font-family: fantasy;
-    margin-bottom: 10px;
-}
-
-/* Home */
-.platform-container{
-    float: left;
-    width: 100%;
-}
-
-.platform-box{
-    float: left;
-}
-
-/* 商品アイテム */
-.application-item{
-    display:inline-block;
-    background: #3f51b5;
-    margin: 20px;
-    width: 250px;
-}
-a.application-item {
-    color: #000000;
-    font-style:normal;
-    text-decoration: none;
-}
-a:hover.application-item {
-    color: #000000;
-    font-style:normal;
-    text-decoration: none;
-}
-
-/* プロダクト */
-.product-item {
-    color: #000000;
-    display:inline-block;
-    margin: 20px;
-}
-a.product-item {
-    color: #000000;
-    text-decoration: none;
-}
-a:hover.product-item {
-    color: #000000;
-    text-decoration: underline;
-}
-
-/* コンタクト(フッター) */
-.contact-item {
-    color: #000000;
-}
-a.contact-item {
-    color: #000000;
-    text-decoration: none;
-}
-a:hover.contact-item {
-    color: #000000;
-    text-decoration: underline;
-}
+/*# sourceMappingURL=style.css.map */

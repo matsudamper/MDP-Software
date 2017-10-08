@@ -1,0 +1,45 @@
+.title {
+  display: block;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.container {
+  a {
+    color: #1d1e1f;
+
+    :hover {
+      background-color: #5340E8;
+    }
+  }
+}
+
+.center-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.space {
+  height: 200px;
+}
+
+.platform{
+  @media screen and (max-width: 400px) {
+    img {
+      object-fit: contain;
+      height: 100px;
+    }
+  }
+
+  img {
+    object-fit: contain;
+  }
+}
