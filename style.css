@@ -1,11 +1,5 @@
-h1 {
-  font-size: 8vh; }
-
-h2 {
-  font-size: 5vh; }
-
-h3 {
-  font-size: 3.5vh; }
+img {
+  object-fit: contain; }
 
 .title {
   display: block;
@@ -27,12 +21,13 @@ main {
   flex-direction: column;
   justify-content: center; }
 
-footer {
-  font-size: 5vh; }
-
 .space {
   height: 200px; }
 
+@media screen and (max-width: 600px) {
+  .platform img {
+    object-fit: contain;
+    height: 150px; } }
 @media screen and (max-width: 400px) {
   .platform img {
     object-fit: contain;
