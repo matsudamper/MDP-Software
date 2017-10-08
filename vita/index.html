@@ -6,7 +6,7 @@
     <title>PlayStation Vita</title>
     <meta name="description" content="PSVita,Android,UWPアプリを開発しています。"/>
 
-    <meta name="viewport" content="initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=0.6">
 
     <!-- Bootstrap-->
     <link rel="stylesheet" href="/lib/bootstrap/bootstrap.min.css">
@@ -16,7 +16,10 @@
     <script src="/lib/vue/vue.js"></script>
 
     <!-- My css-->
+    <link rel="stylesheet" href="/css/layout.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/text-size.css">
+    <link rel="stylesheet" href="/css/products.css">
     <link rel="stylesheet" href="style.css">
 
     <!-- My Layout -->
@@ -45,27 +48,35 @@
 </header>
 
 <main>
-    <span class="title">PlayStation Vita</span>
+    <h2 class="title text-center">PlayStation Vita</h2>
 
     <div id="products" class="flex-row-just-wrap">
         <div class="product" v-for="item in items">
+
             <a :href="item.url" target="_blank">
-                <img :src="icon(item.dir)">
-                <div class="name">{{ item.name }}</div>
-                <span></span>
+
+                <div class="project--flex">
+                    <div class="project--flex--top">
+                        <img :src="icon(item.dir)">
+                        <div class="name">{{ item.name }}</div>
+                    </div>
+
+                    <span class="project--flex--description">説明</span>
+                </div>
             </a>
+
         </div>
     </div>
 </main>
 
 <footer>
-    <h2 class="contact-item text-center">contacts</h2>
+    <h2 class="title">contacts</h2>
 
-    <a class="contact-item text-center" href="https://twitter.com/MDP_Software" target="_blank">
+    <a class="title" href="https://twitter.com/MDP_Software" target="_blank">
         <h3>Twitter : @MDP_Software</h3>
     </a>
 
-    <h3 class="contact-item text-center">Gmail : mdp.mobilesoftware</h3>
+    <h3 class="title">Gmail : mdp.mobilesoftware</h3>
 </footer>
 <script src="model.js"></script>
 </body>
