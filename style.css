@@ -1,7 +1,15 @@
+h1 {
+  font-size: 8vh; }
+
+h2 {
+  font-size: 5vh; }
+
+h3 {
+  font-size: 3.5vh; }
+
 .title {
   display: block;
   text-align: center;
-  font-size: 2.5em;
   font-weight: bold; }
 
 .container a {
@@ -18,6 +26,9 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+
+footer {
+  font-size: 5vh; }
 
 .space {
   height: 200px; }
