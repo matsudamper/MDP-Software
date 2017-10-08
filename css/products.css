@@ -32,8 +32,8 @@
         #products .product .project--flex .project--flex--top img {
           width: 73.33333px;
           height: 73.33333px;
-          width: 73.33333px;
-          height: 73.33333px; } }
+          min-width: 73.33333px;
+          min-height: 73.33333px; } }
       #products .product .project--flex .project--flex--top .name {
         flex: 1;
         font-size: 25px;
