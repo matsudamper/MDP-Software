@@ -4,7 +4,7 @@ new Vue({
     data: {
         items: [
             {
-                name: 'LiveStreamingTweet',
+                name: 'LiveStreaming Tweet',
                 dir: 'LiveStreamingTweet',
                 url: 'http://www.jp.playstation.com/psn/psm/title/#!0531'
             },
