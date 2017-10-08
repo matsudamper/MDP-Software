@@ -25,9 +25,13 @@
       align-items: center; }
       #products .product .project--flex .project--flex--top img {
         width: 110px;
-        height: 110px; }
+        height: 110px;
+        min-width: 110px;
+        min-height: 110px; }
       @media screen and (max-width: 800px) {
         #products .product .project--flex .project--flex--top img {
+          width: 73.33333px;
+          height: 73.33333px;
           width: 73.33333px;
           height: 73.33333px; } }
       #products .product .project--flex .project--flex--top .name {
@@ -45,4 +49,4 @@
         padding-top: 0.5em;
         overflow-wrap: break-word; }
 
-/*# sourceMappingURL=products.css.mapmap */
+/*# sourceMappingURL=products.css.map */

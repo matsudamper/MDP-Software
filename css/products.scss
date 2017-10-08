@@ -36,11 +36,17 @@ $breakPoint : 800px;
         img {
           width: $iconSize;
           height: $iconSize;
+
+          min-width: $iconSize;
+          min-height: $iconSize;
         }
         @media screen and (max-width: $breakPoint) {
           img {
             width: ($iconSize / 3 * 2);
             height: ($iconSize / 3 * 2);
+
+            min-width:;: ($iconSize / 3 * 2);
+            min-height:;: ($iconSize / 3 * 2);
           }
         }
 
