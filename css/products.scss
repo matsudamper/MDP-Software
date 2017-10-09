@@ -1,20 +1,63 @@
 $iconSize: 110px;
-$breakPoint : 800px;
+$breakPoint: 800px;
 
 #products {
   .product {
     padding: 0.5em;
     background-color: #3f51b5;
 
-    /* 可変サイズ */
-    // @formatter:off
-    width: 20em;
-    @media screen and (max-width: $breakPoint) {width: calc(20em - #{$iconSize / 3} - 5px);}
+    // 横幅
+    width: 320px;
+    @media screen and (max-width: $breakPoint) {
+      width: calc(320px - #{$iconSize / 3} - 5px);
+    }
+    @media screen and (max-width: (320px * 2 - ($iconSize / 3))) {
+      &.flex-row-just-wrap__single-column {
+        width: 100%;
+      }
+    }
 
+    // マージン
     margin: 1em;
-    @media screen and (max-width: $breakPoint) {margin: 0.5em;}
-    // @formatter:on
+    @media screen and (max-width: $breakPoint) {
+      margin: 0.25em 0.5em;
+    }
 
+    // 画像
+    img {
+      width: $iconSize;
+      height: $iconSize;
+
+      min-width: $iconSize;
+      min-height: $iconSize;
+    }
+    @media screen and (max-width: $breakPoint) {
+      img {
+        width: ($iconSize / 3 * 2);
+        height: ($iconSize / 3 * 2);
+
+        min-width: ($iconSize / 3 * 2);
+        min-height: ($iconSize / 3 * 2);
+      }
+    }
+
+    // フォントサイズ
+    .name {
+      flex: 1;
+      font-size: 25px;
+      text-align: center;
+      overflow-wrap: break-word;
+    }
+    @media screen and (max-width: $breakPoint) {
+      .name {
+        flex: 1;
+        font-size: 20px;
+        text-align: center;
+        overflow-wrap: break-word;
+      }
+    }
+
+    // 装飾
     a {
       color: #000000;
 
@@ -24,6 +67,7 @@ $breakPoint : 800px;
       }
     }
 
+    // 内部構造
     .project--flex {
       display: flex;
       flex-direction: column;
@@ -32,38 +76,6 @@ $breakPoint : 800px;
         display: flex;
         flex-direction: row;
         align-items: center;
-
-        img {
-          width: $iconSize;
-          height: $iconSize;
-
-          min-width: $iconSize;
-          min-height: $iconSize;
-        }
-        @media screen and (max-width: $breakPoint) {
-          img {
-            width: ($iconSize / 3 * 2);
-            height: ($iconSize / 3 * 2);
-
-            min-width: ($iconSize / 3 * 2);
-            min-height: ($iconSize / 3 * 2);
-          }
-        }
-
-        .name {
-          flex: 1;
-          font-size: 25px;
-          text-align: center;
-          overflow-wrap: break-word;
-        }
-        @media screen and (max-width: $breakPoint) {
-          .name {
-            flex: 1;
-            font-size: 20px;
-            text-align: center;
-            overflow-wrap: break-word;
-          }
-        }
 
         .project--flex--description {
           padding-top: 0.5em;
