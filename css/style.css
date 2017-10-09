@@ -3,4 +3,10 @@
   text-align: center;
   font-weight: bold; }
 
-/*# sourceMappingURL=products.csscss.map */
+.products--title {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  margin: 1em; }
+
+/*# sourceMappingURL=style.css.map */
