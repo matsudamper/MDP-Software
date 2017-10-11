@@ -12,6 +12,8 @@
 .category {
   display: block;
   text-align: center;
-  font-weight: bold; }
+  font-weight: bold;
+  margin-top: 0.5em;
+  margin-bottom: 0.2em; }
 
 /*# sourceMappingURL=style.css.map */
