@@ -21,10 +21,15 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/text-size.css">
     <link rel="stylesheet" href="/css/products.css">
+    <link rel="stylesheet" href="/css/common.css">
 
     <!-- My Layout -->
-    <link rel="stylesheet" href="/lib/flex-row-just-wrap/style.css">
-    <script src="/lib/flex-row-just-wrap/script.js"></script>
+    <script src="/lib/kotlin.js"></script>
+
+    <link rel="stylesheet" href="/lib/flex-arrange/style.css">
+    <script src="/lib/flex-arrange/script.js"></script>
+
+    <script src="/lib/selector.js"></script>
 
     <script>
         // @formatter:off
@@ -50,7 +55,7 @@
 <main>
     <h2 class="products--title">Windows10</h2>
 
-    <div id="products" class="flex-row-just-wrap">
+    <flex-arrange id="products">
         <div class="product" v-for="item in items">
 
             <a :href="item.url" target="_blank">
@@ -64,9 +69,7 @@
                     <span class="project--flex--description"></span>
                 </div>
             </a>
-
         </div>
-    </div>
 </main>
 
 <footer>

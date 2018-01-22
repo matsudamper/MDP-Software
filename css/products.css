@@ -5,13 +5,13 @@
   margin: 1em; }
   @media screen and (max-width: 800px) {
     .products .product, #products .product {
-      width: calc(320px - 36.66667px - 5px); } }
-  @media screen and (max-width: 603.33333px) {
-    .products .product.flex-row-just-wrap__single-column, #products .product.flex-row-just-wrap__single-column {
-      width: 100%; } }
+      width: 280px; } }
+  @media screen and (max-width: 612px) {
+    .products .product.single, #products .product.single {
+      width: 100% !important; } }
   @media screen and (max-width: 800px) {
     .products .product, #products .product {
-      margin: 0.25em 0.5em; } }
+      margin: 4px 8px; } }
   .products .product img, #products .product img {
     width: 110px;
     height: 110px;
