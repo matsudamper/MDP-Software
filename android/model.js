@@ -62,6 +62,11 @@ new Vue({
                         name: 'Small Browser for All Device',
                         dir: 'SmallBrowser',
                         url: 'https://play.google.com/store/apps/details?id=net.matsudamper.smallapp.smallbrowser'
+                    },
+                    {
+                        name: 'フロートウィジェット',
+                        dir: 'FloatWidget',
+                        url: 'https://play.google.com/store/apps/details?id=net.matsudamper.smallapp.smallwidget'
                     }
                 ]
             },
