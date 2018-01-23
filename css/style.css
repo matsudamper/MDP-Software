@@ -8,6 +8,12 @@
   text-align: center;
   font-weight: bold;
   margin: 1em; }
+  .products--title a:hover {
+    color: black; }
+  .products--title a:visited {
+    color: black; }
+  .products--title a:active {
+    color: black; }
 
 .category {
   display: block;

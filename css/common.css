@@ -1,10 +1,18 @@
-.flex-w {
+.flex-h {
   display: flex;
   flex-direction: row; }
 
-.flex-h {
+.flex-h-reverse {
+  display: flex;
+  flex-direction: row-reverse; }
+
+.flex-v {
   display: flex;
   flex-direction: column; }
+
+.flex-v-reverse {
+  display: flex;
+  flex-direction: column-reverse; }
 
 .flex-wrap {
   flex-wrap: wrap; }
@@ -12,16 +20,28 @@
 .flex1 {
   flex: 1; }
 
-.flex-w-center {
-  justify-content: center; }
+.flex-h-start {
+  justify-content: flex-start; }
 
 .flex-h-center {
+  justify-content: center; }
+
+.flex-h-end {
+  justify-content: flex-end; }
+
+.flex-v-start {
+  align-items: flex-start; }
+
+.flex-v-center {
   align-items: center; }
 
-.flex-w-space-around {
+.flex-v-end {
+  align-items: flex-end; }
+
+.flex-v-space-around {
   justify-content: space-around; }
 
-.flex-w-space-between {
+.flex-v-space-between {
   justify-content: space-between; }
 
 .card {
@@ -33,8 +53,8 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-  overflow-y: auto;
-  white-space: nowrap; }
+  white-space: nowrap;
+  overflow-y: auto; }
   .horizontal_scroll table {
     display: block; }
 
