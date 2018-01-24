@@ -13,8 +13,7 @@
       min-width: 100px;
       min-height: 100px; } }
   #product #header {
-    margin-left: 1em;
-    margin-right: 1em; }
+    margin-left: 1em; }
     #product #header .badge {
       padding: 0; }
   #product table#type {
