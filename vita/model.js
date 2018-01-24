@@ -6,52 +6,52 @@ new Vue({
             {
                 name: 'LiveStreaming Tweet',
                 dir: 'LiveStreamingTweet',
-                url: 'http://www.jp.playstation.com/psn/psm/title/#!0531'
+                url: 'LiveStreamingTweet/'
             },
             {
                 name: '4PhotoTweet',
                 dir: '4PhotoTweet',
-                url: 'http://www.jp.playstation.com/psn/psm/title/#!0486'
+                url: '4PhotoTweet/'
             },
             {
                 name: 'StopWatchTimer',
                 dir: 'StopWatchTimer',
-                url: 'http://www.jp.playstation.com/psn/psm/title/#!0465'
+                url: 'StopWatchTimer/'
             },
             {
                 name: 'SpiritLevel',
                 dir: 'SpiritLevel',
-                url: 'http://www.jp.playstation.com/psn/psm/title/#!0471'
+                url: 'SpiritLevel/'
             },
             {
                 name: 'QR Editor',
                 dir: 'QREditor',
-                url: 'http://www.jp.playstation.com/psn/psm/title/#!0450'
+                url: 'QREditor/'
             },
             {
                 name: '加算器方式電卓',
                 dir: 'Calculator',
-                url: 'http://www.jp.playstation.com/psn/psm/title/#!0400'
+                url: 'Calculator/'
             },
             {
                 name: 'Mute Camera',
                 dir: 'MuteCamera',
-                url: 'http://www.jp.playstation.com/psn/psm/title/#!0463'
+                url: 'MuteCamera/'
             },
             {
                 name: '連写カメラ',
                 dir: 'ContinuousShooting',
-                url: 'http://www.jp.playstation.com/psn/psm/title/#!0462'
+                url: 'ContinuousShooting/'
             },
             {
                 name: 'Dot Maker',
                 dir: 'DotMaker',
-                url: 'http://www.jp.playstation.com/psn/psm/title/#!0443'
+                url: 'DotMaker/'
             },
             {
                 name: 'PhotoEdit',
                 dir: 'PhotoEdit',
-                url: 'http://www.jp.playstation.com/psn/psm/title/#!0426'
+                url: 'PhotoEdit/'
             }
 
         ]
