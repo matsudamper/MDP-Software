@@ -1,5 +1,7 @@
 #product {
   margin-bottom: 1em; }
+  #product .name {
+    color: black; }
   @media screen and (max-width: 544px) {
     #product img.icon {
       width: 70px;
