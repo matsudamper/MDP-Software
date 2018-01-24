@@ -19,8 +19,19 @@
     margin-top: 1em;
     margin-bottom: 1em; }
     #product table#type td {
-      padding-left: 1em;
       padding-right: 1em; }
+      @media screen and (max-width: 544px) {
+        #product table#type td {
+          padding-left: 0; } }
+      @media screen and (min-width: 545px) {
+        #product table#type td {
+          padding-left: 1em; } }
+      #product table#type td:first-child {
+        white-space: nowrap; }
+      @media screen and (max-width: 544px) {
+        #product table#type td:nth-child(2) {
+          padding-left: 0;
+          padding-right: 0; } }
   #product #description {
     margin: 1em 0;
     padding: 0.5em;

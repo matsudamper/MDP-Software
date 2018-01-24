@@ -67,7 +67,9 @@
                             flex-v flex-v-space-between">
                     <h3 class="name">{{ name }}</h3>
                     <div class="flex-h flex-h-end flex-v-center">
-                        <a class="badge" :href="url" target="_blank"><img src="../PSM_badge_jp.png" alt="badge"></a>
+                        <a class="badge" :href="url" target="_blank">
+                            <img src="../PSM_badge_jp.png" alt="badge">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -95,10 +97,13 @@
                 </tr>
                 <tr>
                     <td>操作方法</td>
-                    <td v-for="item in functions">{{ item }}</td>
+                    <td>
+                        <div class="flex-v">
+                            <span v-for="item in functions">{{ item }}</span>
+                        </div>
+                    </td>
                 </tr>
             </table>
-
 
             <photo-slider>
                 <img src="SS/1.png">

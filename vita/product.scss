@@ -21,7 +21,6 @@
     }
   }
 
-
   #header {
     margin-left: 1em;
     margin-right: 1em;
@@ -41,12 +40,30 @@
   }
 
   table#type {
-    margin-top: 1em;
-    margin-bottom: 1em;
+      margin-top: 1em;
+      margin-bottom: 1em;
 
-    td {
-      padding-left: 1em;
-      padding-right: 1em;
+      td {
+        padding-right: 1em;
+
+        @media screen and (max-width: 544px) {
+          padding-left: 0;
+        }
+
+        @media screen and (min-width: 545px) {
+          padding-left: 1em;
+        }
+
+        &:first-child {
+          white-space: nowrap;
+        }
+
+        @media screen and (max-width: 544px) {
+          &:nth-child(2) {
+            padding-left: 0;
+            padding-right: 0;
+          }
+      }
     }
   }
 
@@ -55,6 +72,7 @@
     padding: 0.5em;
     border: ridge #3f51b5;
   }
+
 }
 
 .flex-h {
