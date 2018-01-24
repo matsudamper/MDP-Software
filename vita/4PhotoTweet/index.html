@@ -105,13 +105,16 @@
                 </tr>
             </table>
 
-            <photo-slider>
-                <img src="SS/1.png">
+            <div id="photo-slider">
+                <img src="SS/1.png" onclick="location.href=this.getAttribute('src')">
 
                 <div class="flex1 thumbnail">
-                    <img v-for="item in screenshots" :src="item">
+                    <img v-for="item in screenshots" :src="item" onclick="
+                    var images = document.getElementById('photo-slider').getElementsByTagName('img');
+                    images[0].setAttribute('src', this.getAttribute('src'));
+">
                 </div>
-            </photo-slider>
+            </div>
 
             <div id="description" v-html="description"></div>
         </div>

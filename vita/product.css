@@ -46,62 +46,62 @@
   display: flex;
   flex-direction: column; }
 
-photo-slider {
+#photo-slider {
   flex: 1;
   display: flex; }
   @media screen and (max-width: 992px) {
-    photo-slider {
+    #photo-slider {
       flex-direction: column; } }
   @media screen and (min-width: 993px) {
-    photo-slider {
+    #photo-slider {
       flex-direction: row; } }
-  photo-slider > img {
+  #photo-slider > img {
     flex: 1;
     margin: auto; }
     @media screen and (max-width: 992px) {
-      photo-slider > img {
+      #photo-slider > img {
         width: 100%; } }
     @media screen and (min-width: 993px) {
-      photo-slider > img {
+      #photo-slider > img {
         height: 408px; } }
-  photo-slider .thumbnail {
+  #photo-slider .thumbnail {
     display: flex; }
     @media screen and (max-width: 992px) {
-      photo-slider .thumbnail {
+      #photo-slider .thumbnail {
         height: 100px;
         margin-top: 1em;
         flex-direction: row;
         overflow-x: scroll;
         overflow-y: hidden; } }
     @media screen and (min-width: 993px) {
-      photo-slider .thumbnail {
+      #photo-slider .thumbnail {
         height: 408px;
         margin-left: 1em;
         flex-direction: column;
         overflow-x: hidden;
         overflow-y: scroll; } }
-    photo-slider .thumbnail > img {
+    #photo-slider .thumbnail > img {
       padding: auto; }
       @media screen and (max-width: 992px) {
-        photo-slider .thumbnail > img {
+        #photo-slider .thumbnail > img {
           height: 100px;
           margin: auto 1em auto auto; } }
       @media screen and (min-width: 993px) {
-        photo-slider .thumbnail > img {
+        #photo-slider .thumbnail > img {
           margin: auto auto 1em;
           width: 100%; } }
-      photo-slider .thumbnail > img:last-child {
+      #photo-slider .thumbnail > img:last-child {
         margin: auto auto; }
   @media screen and (max-width: 992px) {
-    photo-slider ::-webkit-scrollbar {
+    #photo-slider ::-webkit-scrollbar {
       height: 10px; } }
   @media screen and (min-width: 993px) {
-    photo-slider ::-webkit-scrollbar {
+    #photo-slider ::-webkit-scrollbar {
       width: 10px; } }
-  photo-slider ::-webkit-scrollbar-track {
+  #photo-slider ::-webkit-scrollbar-track {
     border-radius: 10px;
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1); }
-  photo-slider ::-webkit-scrollbar-thumb {
+  #photo-slider ::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 50, 0.5);
     border-radius: 10px;
     box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.3); }
