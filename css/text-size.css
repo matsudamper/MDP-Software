@@ -6,7 +6,7 @@ h2 {
     font-size: 2.5em;
 }
 
-h3 {
+h3.category {
     font-size: 2em;
 }
 
@@ -19,7 +19,7 @@ h3 {
         font-size: 1.5em;
     }
 
-    h3 {
+    h3.category {
         font-size: 1.2em;
     }
 }
