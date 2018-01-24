@@ -22,4 +22,16 @@
   margin-top: 0.5em;
   margin-bottom: 0.2em; }
 
+.info {
+  text-align: center;
+  margin-bottom: 1em; }
+  .info a {
+    text-decoration: underline; }
+    .info a:hover {
+      color: black; }
+    .info a:visited {
+      color: black; }
+    .info a:active {
+      color: black; }
+
 /*# sourceMappingURL=style.css.map */
