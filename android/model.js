@@ -124,3 +124,9 @@ new Vue({
         }
     }
 });
+(function () {
+    var urlHash = location.hash;
+    if (urlHash) {
+        document.querySelector(urlHash).scrollIntoView(true);
+    }
+})()

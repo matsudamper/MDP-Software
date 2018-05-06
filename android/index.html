@@ -13,9 +13,6 @@
     <link rel="stylesheet" href="/lib/bootstrap/bootstrap.min.css">
     <script src="/lib/bootstrap/bootstrap.min.js"></script>
 
-    <!-- Vue -->
-    <script src="/lib/vue/vue.js"></script>
-
     <!-- My css-->
     <link rel="stylesheet" href="/css/layout.css">
     <link rel="stylesheet" href="/css/style.css">
@@ -54,8 +51,8 @@
     <h2 class="products--title">Android</h2>
 
     <div id="categories">
-        <div v-for="category in categories">
-            <h3 class="category">{{ category.title }}</h3>
+        <div v-for="(category, index) in categories">
+            <h3 :id="category.dir" class="category">{{ category.title }}</h3>
 
             <flex-arrange class="products">
                 <div class="product"
@@ -88,6 +85,10 @@
 
     <span class="title">Gmail : mdp.mobilesoftware</span>
 </footer>
+
+<!-- Vue -->
+<script src="/lib/vue/vue.js"></script>
+<script src="/lib/vue/vue-router.js"></script>
 <script src="model.js"></script>
 </body>
 </html>
