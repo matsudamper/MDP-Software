@@ -44,14 +44,23 @@ new Vue({
                 dir: "SmallAppForAllDevice",
                 items: [
                     {
+                        name: '履歴ランチャー',
+                        dir: 'RecentLauncher',
+                        url: 'https://play.google.com/store/apps/details?id=net.matsudamper.recentlauncher',
+                        description: "スモールアプリのランチャーを再現",
+                        date: "2018-5-5"
+                    },
+                    {
                         name: 'Small Tube for All Device',
                         dir: 'SmallTube',
-                        url: 'https://play.google.com/store/apps/details?id=net.matsudamper.smallapp.smalltube'
+                        url: 'https://play.google.com/store/apps/details?id=net.matsudamper.smallapp.smalltube',
+                        description: "バックグラウンドでYoutubeを再生"
                     },
                     {
                         name: 'Small Timer for All Device',
                         dir: 'SmallTimer',
-                        url: 'https://play.google.com/store/apps/details?id=net.matsudamper.smallapp.smalltimer'
+                        url: 'https://play.google.com/store/apps/details?id=net.matsudamper.smallapp.smalltimer',
+                        description: "横長で邪魔にならないタイマー"
                     },
                     {
                         name: 'Small Lamp for All Device',
@@ -61,12 +70,14 @@ new Vue({
                     {
                         name: 'Small Browser for All Device',
                         dir: 'SmallBrowser',
-                        url: 'https://play.google.com/store/apps/details?id=net.matsudamper.smallapp.smallbrowser'
+                        url: 'https://play.google.com/store/apps/details?id=net.matsudamper.smallapp.smallbrowser',
+                        description: "他のことをしながら調べ物ができる"
                     },
                     {
                         name: 'フロートウィジェット',
                         dir: 'FloatWidget',
-                        url: 'https://play.google.com/store/apps/details?id=net.matsudamper.smallapp.smallwidget'
+                        url: 'https://play.google.com/store/apps/details?id=net.matsudamper.smallapp.smallwidget',
+                        description: "ウィジェットをスモールアプリ化させる機能を再現",
                     }
                 ]
             },
@@ -97,7 +108,8 @@ new Vue({
                     {
                         name: 'ふりったー',
                         dir: 'Flitter',
-                        url: 'https://play.google.com/store/apps/details?id=net.matsudamper.kanon'
+                        url: 'https://play.google.com/store/apps/details?id=net.matsudamper.kanon',
+                        description: "フリック操作のTwitterクライアント"
                     },
                     {
                         name: 'HORIKAESHI',
@@ -112,7 +124,8 @@ new Vue({
                     {
                         name: 'プリセットカレンダー',
                         dir: 'PresetCalendar',
-                        url: 'https://play.google.com/store/apps/details?id=net.matsudamper.presetcalendar'
+                        url: 'https://play.google.com/store/apps/details?id=net.matsudamper.presetcalendar',
+                        description: "一日のまとまった予定が一気に追加できる"
                     }
                 ]
             }
