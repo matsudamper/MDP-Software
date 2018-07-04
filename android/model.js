@@ -93,7 +93,8 @@ new Vue({
                     {
                         name: 'Tweet Bookark',
                         dir: 'TweetBookark',
-                        url: 'https://play.google.com/store/apps/details?id=com.matsudamper.TweetBookmark'
+                        url: 'https://play.google.com/store/apps/details?id=com.matsudamper.TweetBookmark',
+                        description: "凍結された上に公式クライアントにブックマーク機能が実装されたので公開中止となりました"
                     },
                     {
                         name: 'Rotate Screenshot',
