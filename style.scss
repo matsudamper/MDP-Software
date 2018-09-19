@@ -1,9 +1,6 @@
-
-
 img {
   object-fit: contain;
 }
-
 
 .title {
   display: block;
@@ -54,5 +51,16 @@ main {
 
   img {
     object-fit: contain;
+  }
+}
+
+.text-box {
+  .section {
+    padding-bottom: 2em;
+
+    span::after {
+      content: "\A";
+      white-space: pre ;
+    }
   }
 }

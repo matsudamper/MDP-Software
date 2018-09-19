@@ -35,4 +35,10 @@ main {
 .platform img {
   object-fit: contain; }
 
+.text-box .section {
+  padding-bottom: 2em; }
+  .text-box .section span::after {
+    content: "\A";
+    white-space: pre; }
+
 /*# sourceMappingURL=style.css.map */
