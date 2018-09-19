@@ -78,6 +78,13 @@ new Vue({
                         dir: 'FloatWidget',
                         url: 'https://play.google.com/store/apps/details?id=net.matsudamper.smallapp.smallwidget',
                         description: "ウィジェットをスモールアプリ化させる機能を再現",
+                    },
+                    {
+                        name: 'SmallMemo for All Device',
+                        dir: 'SmallMemo',
+                        url: 'https://play.google.com/store/apps/details?id=net.matsudamper.smallapp.smallmemo',
+                        description: '他のものを見ながらメモ',
+                        date: '2018-7-15'
                     }
                 ]
             },
@@ -93,7 +100,8 @@ new Vue({
                     {
                         name: 'Tweet Bookark',
                         dir: 'TweetBookark',
-                        url: 'https://play.google.com/store/apps/details?id=com.matsudamper.TweetBookmark'
+                        url: 'https://play.google.com/store/apps/details?id=com.matsudamper.TweetBookmark',
+                        description: "凍結された上に公式クライアントにブックマーク機能が実装されたので公開中止となりました"
                     },
                     {
                         name: 'Rotate Screenshot',
